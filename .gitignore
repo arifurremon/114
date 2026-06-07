@@ -1,0 +1,66 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+/playwright-report/
+/blob-report/
+/test-results/
+e2e/.runtime-config.json
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# terraform local secrets
+infra/terraform/terraform.tfvars
+infra/terraform/.terraform/
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# logs — never commit log files; they may contain internal schema/type info
+*.log
+
+# cookies — NEVER commit cookie files; they contain live session credentials
+cookies.txt
+*.cookies
+*.cookie
+
+# scratch work — developer scratch files must never be committed
+/scratch
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.genkit/*
+.env*
+!.env.example
+
+# firebase
+firebase-debug.log
+firestore-debug.log
+e2e/.runtime-config.json
+
+/playwright-report/
+/test-results/
